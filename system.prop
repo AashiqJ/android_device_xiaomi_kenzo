@@ -243,10 +243,10 @@ persist.debug.8976.config=true
 persist.timed.enable=true
 
 # FRP
-ro.frp.pst=/dev/block/bootdevice/by-name/config
+#ro.frp.pst=/dev/block/bootdevice/by-name/config
 
 # Simulate sdcard on /data/media
 persist.fuse_sdcard=true
 
 # Optimal dex2oat threads for faster app installation
-ro.sys.fw.dex2oat_thread_count=4
+ro.sys.fw.dex2oat_thread_count=6
