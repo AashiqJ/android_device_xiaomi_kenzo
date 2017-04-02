@@ -15,4 +15,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/du_kenzo.mk
+    $(LOCAL_DIR)/du.mk
