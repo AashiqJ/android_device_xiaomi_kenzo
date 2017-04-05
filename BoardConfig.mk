@@ -59,8 +59,8 @@ TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_CROSS_COMPILE_PREFIX := aarch64-linux-android-
 TARGET_KERNEL_APPEND_DTB := true
 BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
-TARGET_KERNEL_SOURCE := kernel/xiaomi/kenzo
-TARGET_KERNEL_CONFIG := kenzo_defconfig
+TARGET_KERNEL_SOURCE := kernel/xiaomi/msm8956
+TARGET_KERNEL_CONFIG := cyanogenmod_kenzo_defconfig
 
 # Lights
 TARGET_PROVIDES_LIBLIGHT := true
@@ -131,7 +131,6 @@ BOARD_USES_QCNE := true
 
 # Charger
 BOARD_CHARGER_ENABLE_SUSPEND := true
-BOARD_HAL_STATIC_LIBRARIES += libhealthd.msm8952
 
 # Display
 BOARD_EGL_CFG := $(DEVICE_PATH)/egl.cfg
