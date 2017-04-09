@@ -275,6 +275,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     camera.msm8952
 
+PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
+    sys.usb.config=adb \
+    ro.adb.secure=0
+
 # Fingerprint
 PRODUCT_PACKAGES += \
     fingerprintd \
