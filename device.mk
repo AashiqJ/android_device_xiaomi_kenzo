@@ -241,6 +241,7 @@ PRODUCT_PACKAGES += \
 
 # Camera
 PRODUCT_PACKAGES += \
+    Snap \
     camera.msm8952
 
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
