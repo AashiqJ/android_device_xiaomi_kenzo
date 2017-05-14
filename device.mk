@@ -250,8 +250,7 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
 
 # Fingerprint
 PRODUCT_PACKAGES += \
-    fingerprintd \
-    fingerprint.msm8952
+    fingerprintd
 
 # FM radio
 PRODUCT_PACKAGES += \
