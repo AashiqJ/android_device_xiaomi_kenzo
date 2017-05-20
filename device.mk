@@ -146,10 +146,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     lights.msm8952
 
-# Power
-#PRODUCT_PACKAGES += \
-#    power.msm8952
-
 # GPS
 PRODUCT_PACKAGES += \
     com.android.location.provider \
@@ -205,10 +201,6 @@ PRODUCT_PACKAGES += \
     libOmxVdecHevc \
     libOmxVenc \
     libstagefrighthw \
-
-# Sensors
-PRODUCT_PACKAGES += \
-    sensors.kenzo
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/sensor_def_qcomdev.conf:system/etc/sensors/sensor_def_qcomdev.conf \
@@ -283,13 +275,6 @@ PRODUCT_PACKAGES += \
     IPACM_cfg.xml \
     ipacm \
     libipanat
-
-# Thermal
-#PRODUCT_PACKAGES += \
-#    thermal.kenzo
-
-#PRODUCT_COPY_FILES += \
-#    device/xiaomi/kenzo/configs/thermal-engine-8956.conf:system/etc/thermal-engine-8956.conf
 
 # for off charging mode
 PRODUCT_PACKAGES += \
