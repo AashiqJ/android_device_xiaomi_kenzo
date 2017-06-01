@@ -25,21 +25,12 @@ PRODUCT_COPY_FILES := device/xiaomi/kenzo/configs/apns-full-conf.xml:system/etc/
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 
-# Inherit some common du stuff.
-$(call inherit-product, vendor/du/config/common_full_phone.mk)
-
-PRODUCT_NAME := du_kenzo
+PRODUCT_NAME := aosp_kenzo
 PRODUCT_DEVICE := kenzo
-PRODUCT_BRAND := Xiaomi
-PRODUCT_MODEL := Redmi Note 3
-PRODUCT_MANUFACTURER := xiaomi
+PRODUCT_BRAND := Android
+PRODUCT_MODEL := AOSP on Kenzo
+PRODUCT_MANUFACTURER := XIAOMI
 
 $(call inherit-product, device/xiaomi/kenzo/device.mk)
 $(call inherit-product-if-exists, vendor/xiaomi/kenzo/device-vendor.mk)
 
-PRODUCT_BUILD_PROP_OVERRIDES += \
-    BUILD_FINGERPRINT=Xiaomi/kenzo/kenzo:6.0.1/MMB29M/V8.2.1.0.MHOCNDL:user/release-keys \
-    PRIVATE_BUILD_DESC="kenzo-user 6.0.1 MMB29M V8.2.1.0.MHOCNDL release-keys"
-
-# Assert
-TARGET_OTA_ASSERT_DEVICE := kenzo,kate
