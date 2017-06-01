@@ -262,8 +262,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libril_proxy \
     librmnetctl \
-    libxml2 \
-    Stk
+    libxml2
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/mbn_ota.txt:system/etc/mbn_ota.txt
