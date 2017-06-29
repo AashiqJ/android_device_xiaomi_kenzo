@@ -23,7 +23,7 @@ function get-set-forall() {
     MemTotal=${MemTotalStr:16:8}
 
     # HMP scheduler (big.Little cluster related) settings
-    write /proc/sys/kernel/sched_boost 0
+    write /proc/sys/kernel/sched_boost 1
     write /proc/sys/kernel/sched_upmigrate 95
     write /proc/sys/kernel/sched_downmigrate 85
 
