@@ -215,6 +215,6 @@ WPA_SUPPLICANT_VERSION := VER_0_8_X
 -include vendor/xiaomi/kenzo/BoardConfigVendor.mk
 
 # SELinux
-include device/qcom/sepolicy/sepolicy.mk
-BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
+#include device/qcom/sepolicy/sepolicy.mk
+#BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
 BOARD_SECCOMP_POLICY := $(DEVICE_PATH)/seccomp
